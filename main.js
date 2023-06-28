@@ -15,5 +15,5 @@ const arg = (flag) => {
   return false
 }
 const isMac = process.platform === 'darwin'
-const main = arg('--bootstrap-file') || (isMac ? '../../../../../../boot.js' : '../../../../../boot.js')
+const main = arg('--bootstrap-file') || (isMac ? '../../../../../../../boot.js' : '../../../../../../boot.js')
 require(main)

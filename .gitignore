@@ -1,9 +1,5 @@
 dist
 node_modules
 .DS_Store
-arch
-bootstrap.js
-boot.js
 electron-main.js
-cli.js
-holestrap
+notarize.sh
