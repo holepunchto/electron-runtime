@@ -4,12 +4,12 @@
   "description": "Holepunch Runtime",
   "main": "main.js",
   "scripts": {
-    "pkg:testbuild": "electron-builder --config.releaseInfo.releaseNotes=testbuild",
-    "pkg:local": "electron-builder --config.releaseInfo.releaseNotes=local",
-    "pkg": "electron-builder"
+    "dist:testbuild": "electron-builder --config.releaseInfo.releaseNotes=testbuild",
+    "dist:local": "electron-builder --config.releaseInfo.releaseNotes=local",
+    "dist": "electron-builder"
   },
   "build": {
-    "appId": "com.runtime.holepunch",
+    "appId": "to.holepunch.runtime",
     "productName": "Holepunch Runtime",
     "executableName": "holepunch-runtime",
     "copyright": "Copyright © 2022 Holepunch",
@@ -28,14 +28,11 @@
     },
     "win": {
       "icon": "build/icon.ico"
-    },
-    "afterPack": "./after-pack.js",
-    "afterAllArtifactBuild": "./after-all-artifact-build.js"
+    }
   },
   "author": "Holepunch",
   "devDependencies": {
     "electron": "^17.4.8",
-    "electron-builder": "^23.1.0",
-    "localdrive": "^1.6.0"
+    "electron-builder": "^23.1.0"
   }
 }
