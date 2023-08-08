@@ -12,7 +12,7 @@
     "appId": "to.holepunch.runtime",
     "productName": "Holepunch Runtime",
     "executableName": "holepunch-runtime",
-    "copyright": "Copyright © 2022 Holepunch",
+    "copyright": "Copyright © 2023 Holepunch",
     "nodeVersion": "current",
     "files": [
       "main.js"
@@ -33,7 +33,7 @@
   },
   "author": "Holepunch",
   "devDependencies": {
-    "electron": "^17.4.8",
+    "electron": "^25.4.0",
     "electron-builder": "^23.1.0"
   }
 }
