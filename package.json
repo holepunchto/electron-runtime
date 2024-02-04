@@ -2,7 +2,7 @@
   "name": "pear-runtime",
   "version": "3.0.0",
   "description": "Pear Runtime",
-  "main": "main.js",
+  "main": "boot.js",
   "scripts": {
     "dist:testbuild": "electron-builder --config.releaseInfo.releaseNotes=testbuild",
     "dist:local": "electron-builder --config.releaseInfo.releaseNotes=local",
@@ -15,7 +15,7 @@
     "copyright": "Copyright © 2024 Holepunch Inc",
     "nodeVersion": "current",
     "files": [
-      "main.js"
+      "boot.js"
     ],
     "asar": false,
     "mac": {
@@ -37,6 +37,6 @@
     "electron-builder": "^23.1.0"
   },
   "dependencies": {
-    "node-bare-bundle": "^1.1.0"
+    "node-bare-bundle": "^1.2.0"
   }
 }

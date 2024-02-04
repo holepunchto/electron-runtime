@@ -5,11 +5,15 @@ const isMac = process.platform === 'darwin'
 const dir = (isMac ? '../../../../../../../' : '../../../../../../')
 
 require.extensions['.bundle'] = function (mod, filename) {
-  mod.exports = runBundle(fs.readFileSync(filename))
+  mod.exports = runBundle(fs.readFileSync(filename), { mount: filename })
 }
 
 try {
   require(dir + 'boot.bundle')
 } catch {
-  require(dir + 'boot.js')
+  try {
+    require(dir + 'boot.cjs')
+  } catch {
+    require(dir + 'boot.js')
+  }
 }
