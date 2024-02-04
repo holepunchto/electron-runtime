@@ -1,7 +1,7 @@
 {
-  "name": "holepunch-runtime",
-  "version": "2.0.0",
-  "description": "Holepunch Runtime",
+  "name": "pear-runtime",
+  "version": "3.0.0",
+  "description": "Pear Runtime",
   "main": "main.js",
   "scripts": {
     "dist:testbuild": "electron-builder --config.releaseInfo.releaseNotes=testbuild",
@@ -10,9 +10,9 @@
   },
   "build": {
     "appId": "to.holepunch.runtime",
-    "productName": "Holepunch Runtime",
-    "executableName": "holepunch-runtime",
-    "copyright": "Copyright © 2023 Holepunch",
+    "productName": "Pear Runtime",
+    "executableName": "pear-runtime",
+    "copyright": "Copyright © 2024 Holepunch Inc",
     "nodeVersion": "current",
     "files": [
       "main.js"
@@ -31,9 +31,12 @@
       "certificateSubjectName": "Red Porridge With Creme ApS"
     }
   },
-  "author": "Holepunch",
+  "author": "Holepunch Inc",
   "devDependencies": {
-    "electron": "^25.4.0",
+    "electron": "25.4.0",
     "electron-builder": "^23.1.0"
+  },
+  "dependencies": {
+    "node-bare-bundle": "^1.1.0"
   }
 }
