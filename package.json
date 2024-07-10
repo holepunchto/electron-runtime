@@ -34,7 +34,7 @@
   },
   "author": "Holepunch Inc",
   "devDependencies": {
-    "electron": "27.3.11",
+    "electron": "31.2.0",
     "electron-builder": "^23.1.0"
   },
   "dependencies": {
