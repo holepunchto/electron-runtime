@@ -1,3 +1,11 @@
-# Holepunch Runtime
+# Pear Electron Runtime
 
-The repo for building the runtime app
+> Electron Build for Pear
+
+See [pear-electron](https://github.com/holepunchto/pear-electron)
+
+## Runtime Drive Key
+
+```
+pear://6988abemqn7ogjpm8cjjg4aeb81rduxfn4h31sgn44u3cadu9s7o
+```
