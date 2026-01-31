@@ -1,3 +1,5 @@
+const { isMac } = require('which-runtime')
+if (isMac && !process.argv[1]) process.exit(0) // silent exit for "Re-open windows when logging in"
 const fs = require('fs')
 const path = require('path')
 const { pathToFileURL } = require('url')
